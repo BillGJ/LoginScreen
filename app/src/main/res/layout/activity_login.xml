@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RL"
+    android:background="@drawable/sky_back"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ebillson.loginapp.LoginActivity">
+
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:text="LOG IN"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        tools:text="LOG IN" />
+
+
+    <Button
+        android:id="@+id/btn_fb"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Log in with Facebook"
+        android:textColor="#FFF"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_fb"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20dp"
+        tools:text="or"
+        android:id="@+id/textView6" />
+
+    <LinearLayout
+        android:alpha="0.8"
+        android:id="@+id/Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:drawableLeft="@drawable/ic_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:drawableLeft="@drawable/ic_lock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:onClick="onLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Linear"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="LOG IN"
+        android:textColor="#FFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Your Password?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnLogin"
+        android:textColor="#fff"/>
+
+
+</RelativeLayout>
